@@ -28,13 +28,6 @@ async function fetchData() {
 
         let dataArray = data['values']
         outDataArray = dataArray
-        // console.log(dataArray.length)
-        // console.log(data['values'][17][0]) // name
-        // console.log(data['values'][5][1]) // m3u8
-        // console.log(data['values'][5][2]) // thumbnail
-        // console.log(data['values'][5][3]) // dec
-        // console.log(typeof (data['values']))
-
 
         let x = getRandNum(dataArray.length)
         let y = -1;
@@ -66,13 +59,3 @@ async function fetchData() {
 
 // Attach event listener to the button
 sflbt.addEventListener('click', fetchData);
-
-// let playBt = document.getElementById('play_bt');
-// let playBt = document.getElementsByClassName('btn-primary')
-
-// function definePlay() {
-//     let xxx = document.getElementsByClassName('btn btn-primary play_btn')
-//     xxx.addEventListener('click', () => {
-//         console.log("xxx clicked")
-//     })
-// }
